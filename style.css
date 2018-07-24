@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+aside {
+  background: coral;
+  grid-column: 1;
+}
+
+header {
+  display: flex;
+  grid-row: 1;
+  grid-column: 2;
+  align-items: center;
+  width: 100%;
+}
+
+.icons {
+
+}
+
+.icon__menu {
+  background: url(images/bars-solid.svg);
+}
+
+input {
+  background: url(images/search-solid.svg);
+  background-repeat: no-repeat;
+  background-size: 1.1em;
+  background-position: 5px center;
+  border: none;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding-left: 30px;
+  font-size: 18px;
+}
+
+input img {
+  font-size: 10px;
+}
