@@ -12,29 +12,52 @@ body {
   grid-template-columns: 225px 1fr;
 }
 
-aside {
+.aside {
   background: rgb(55, 64, 80);
   color: rgb(155, 165, 182);
   grid-column: 1;
   grid-row: 1;
 }
 
+.header {
+  border-bottom: 1px solid lightgray;
+  display: grid;
+  grid-template-columns: 50px 1fr 50px 50px 50px;
+  height: 60px;
+}
+
+.icon {
+  color: rgb(103, 114, 137);
+}
+
+.input {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  width: 100%;
+}
+
+.item {
+  text-decoration: none;
+  margin: 15px 15px;
+  padding: 0 5px; 
+}
+
+.profile {
+  align-items: center;
+  display: grid;
+  justify-items: center;
+}
+
+
+
+
 
 /* Elements ********************************************************/
-aside a {
-  display: block;
-  text-decoration: none;
-  padding: 0 20px; 
-}
 
-.aside__nav {
+.aside__container {
   border-bottom: 2px solid rgba(48, 55, 71, 1);
   padding: 15px;
-}
-
-aside .fas,
-.fab {
-  margin: 15px 15px;
 }
 
 .aside__title {
@@ -42,59 +65,32 @@ aside .fas,
   font-size: 1.0rem;
   font-weight: 100;
   padding: 10px 16px;
+  text-decoration: none;
 }
 
-
-/* Modifiers *******************************************************/
-.aside__nav--profile {
+.header__item {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  display: grid;
-  justify-items: center;
+  text-decoration: none;
+  border-right: 1px solid lightgray;
 }
 
-.aside__nav--profile a {
-  color: rgb(155, 165, 182);
-  padding-right: 2px;
-  margin-left: 10px;
+.input__header {
+  border-right: 1px solid lightgray;
 }
 
-.aside__nav--profile img {
+.profile__img {
   border-radius: 50%;
   height: 90px;
   margin-top: 20px;
   width: 90px;
 }
 
-
-/* h5 {
-  margin: 15px 35px;
+.profile__title {
+  color: rgb(155, 165, 182);
+  padding-right: 2px;
+  margin-left: 10px;
 }
 
-header {
-  border: 1px solid blue;
-  display: grid;
-  grid-template-columns: 50px 1fr 50px 50px 50px;
-  height: 50px;
-  justify-items: center;
-  align-items: center;
-}
-
-.icons {
-  color: black;
-  font-size: 1.5rem;
-}
-
-input {
-  background-repeat: no-repeat;
-  background-size: 1.1em;
-  background-position: 5px center;
-  border: none;
-  width: 50%;
-  outline: none;
-  padding-left: 30px;
-  font-size: 18px;
-}
-
-input img {
-  font-size: 10px;
-} */
+/* Modifiers *******************************************************/

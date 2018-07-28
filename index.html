@@ -10,40 +10,40 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header class="header__nav">
-      <a href="#" class=""><i class="fas fa-bars icons"></i></a>
-      <input type="search" placeholder="Search">
-      <a href="#"><i class="fas fa-user-plus icons"></i></a>
-      <a href="#"><i class="fas fa-file-download icons"></i></a>
-      <a href="#"><i class="fas fa-folder icons"></i></a>
+    <header class="header">
+      <a href="#" class="header__item"><i class="fas fa-bars icon"></i></a>
+      <input class="input input__header" type="search" placeholder="Search for a job, task or resume">
+      <a href="#" class="header__item"><i class="fas fa-user-plus icon"></i></a>
+      <a href="#" class="header__item"><i class="fas fa-file-download icon"></i></a>
+      <a href="#" class="header__item"><i class="fas fa-folder icon"></i></a>
     </header>
-    <aside>
-      <section class="aside__nav aside__nav--profile">
-        <img src="images/Mark Pearyer.jpg" alt="">
-        <a href="#">Mark Pearyer<i class="fas fa-caret-down"></i></a>
+    <aside class="aside">
+      <section class="profile">
+        <img class="profile__img" src="images/Mark Pearyer.jpg" alt="">
+        <a class="profile__title" href="#">Mark Pearyer<i class="item fas fa-caret-down"></i></a>
       </section>
-      <ul class="aside__nav">
+      <ul class="aside__container">
         <h5 class="aside__title">Main</h5>
-        <li><i class="fas fa-home"></i>HOME</li>
-        <li><i class="fas fa-briefcase"></i>JOBS</li>
-        <li><i class="fas fa-file-alt"></i>RESUMES</li>
-        <li><i class="fas fa-tasks"></i>TASKS</li>
-        <li><i class="fas fa-calendar-alt"></i>CALENDAR</li>
+        <li><i class="item fas fa-home"></i>HOME</li>
+        <li><i class="item fas fa-briefcase"></i>JOBS</li>
+        <li><i class="item fas fa-file-alt"></i>RESUMES</li>
+        <li><i class="item fas fa-tasks"></i>TASKS</li>
+        <li><i class="item fas fa-calendar-alt"></i>CALENDAR</li>
       </ul>
-      <ul class="aside__nav">
+      <ul class="aside__container">
         <h5 class="aside__title">Admin</h5>
-        <li><i class="fas fa-user-friends"></i>USERS</li>
-        <li><i class="fas fa-map"></i>LOCATIONS</li>
-        <li><i class="fas fa-bezier-curve"></i>WORKFLOWS</li>
-        <li><i class="fas fa-newspaper"></i>JOB BOARDS</li>
-        <li><i class="fab fa-connectdevelop"></i>SOCIAL</li>
+        <li><i class="item fas fa-user-friends"></i>USERS</li>
+        <li><i class="item fas fa-map"></i>LOCATIONS</li>
+        <li><i class="item fas fa-bezier-curve"></i>WORKFLOWS</li>
+        <li><i class="item fas fa-newspaper"></i>JOB BOARDS</li>
+        <li><i class="item fab fa-connectdevelop"></i>SOCIAL</li>
       </ul>
-      <ul class="aside__nav">
+      <ul class="aside__container">
         <h5 class="aside__title">Categories</h5>
-        <li><i class="fas fa-check-square"></i>Administrative</li>
-        <li><i class="fas fa-square"></i>Design</li>
-        <li><i class="fas fa-square"></i>Executive</li>
-        <li><i class="fas fa-square"></i>Human Resources</li>
+        <li><i class="item fas fa-check-square"></i>Administrative</li>
+        <li><i class="item fas fa-square"></i>Design</li>
+        <li><i class="item fas fa-square"></i>Executive</li>
+        <li><i class="item fas fa-square"></i>Human Resources</li>
       </ul>
     </aside>
     <script src="dist/main.js"></script>  
