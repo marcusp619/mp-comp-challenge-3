@@ -1,23 +1,35 @@
+/************
+This stylesheet is written in BEM
+
+Block = .block
+Element = .block__element
+Modifier = .block__element--modifier / .block--modifier
+*************/
+
+/* Block ***********************************************************/
 body {
- /*  background: #07071D; */
-}
-.wrapper {
   display: grid;
   grid-template-columns: 225px 1fr;
 }
 
-/* ASIDE */
-
 aside {
+  background: rgb(55, 64, 80);
+  color: rgb(155, 165, 182);
   grid-column: 1;
   grid-row: 1;
 }
 
+
+/* Elements ********************************************************/
 aside a {
   display: block;
   text-decoration: none;
-  color: #D8DAF3;
   padding: 0 20px; 
+}
+
+.aside__nav {
+  border-bottom: 2px solid rgba(48, 55, 71, 1);
+  padding: 15px;
 }
 
 aside .fas,
@@ -25,27 +37,36 @@ aside .fas,
   margin: 15px 15px;
 }
 
-.aside__profile {
-  display: grid;
-  justify-items: center;
-  align-items: center;
+.aside__title {
+  color: rgb(103, 114, 137);
+  font-size: 1.0rem;
+  font-weight: 100;
+  padding: 10px 16px;
 }
 
-.aside__profile a {
-  padding: 20px 0 0 2px;
+
+/* Modifiers *******************************************************/
+.aside__nav--profile {
+  align-items: center;
+  display: grid;
+  justify-items: center;
+}
+
+.aside__nav--profile a {
+  color: rgb(155, 165, 182);
+  padding-right: 2px;
   margin-left: 10px;
 }
 
-.aside__profile img {
+.aside__nav--profile img {
   border-radius: 50%;
-  height: 100px;
+  height: 90px;
   margin-top: 20px;
-  width: 100px;
+  width: 90px;
 }
 
-/* HEADER */
 
-h5 {
+/* h5 {
   margin: 15px 35px;
 }
 
@@ -76,4 +97,4 @@ input {
 
 input img {
   font-size: 10px;
-}
+} */
