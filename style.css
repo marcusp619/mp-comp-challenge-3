@@ -7,16 +7,24 @@ Modifier = .block__element--modifier / .block--modifier
 *************/
 
 /* Block ***********************************************************/
-body {
+
+.wrapper {
   display: grid;
   grid-template-columns: 225px 1fr;
 }
-
 .aside {
   background: rgb(55, 64, 80);
   color: rgb(155, 165, 182);
   grid-column: 1;
   grid-row: 1;
+}
+
+.btn {
+  border: 1px solid rgb(103, 114, 137);;
+  border-radius: 50%;
+  color: rgb(103, 114, 137);
+  font-size: 14px;
+  padding: 8px 10px;
 }
 
 .header {
@@ -33,7 +41,7 @@ body {
 .input {
   border: none;
   outline: none;
-  font-size: 18px;
+  font-size: 20px;
   width: 100%;
 }
 
@@ -41,6 +49,14 @@ body {
   text-decoration: none;
   margin: 15px 15px;
   padding: 0 5px; 
+}
+
+.job {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 40px;
+  padding: 0 40px;
 }
 
 .profile {
@@ -68,12 +84,23 @@ body {
   text-decoration: none;
 }
 
+.fa-circle {
+  color: rgb(153, 195, 84);
+  padding-right: 5px;
+}
+
 .header__item {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  text-decoration: none;
   border-right: 1px solid lightgray;
+  display: flex;
+  font-size: 17px;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.icon__location {
+  color: rgb(103, 114, 137);
+  padding-right: 8px;
 }
 
 .input__header {
@@ -84,6 +111,27 @@ body {
   border-right: 1px solid lightgray;
   font-size: 16px;
   padding-left: 45px;
+}
+
+.job__post {
+  color: rgb(94, 175, 244);
+}
+
+.job__subtitle {
+  color: rgb(103, 114, 137);
+}
+
+.job__title {
+  padding-bottom: 5px;
+}
+.job__menu {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.menu__item {
+  margin-left: 15px;
 }
 
 .profile__img {
@@ -101,3 +149,10 @@ body {
 }
 
 /* Modifiers *******************************************************/
+.btn--wide {
+  background: none;
+  border-radius: 100px;
+  font-weight: 800;
+  padding: 8px 20px;
+  text-decoration: none;
+}
