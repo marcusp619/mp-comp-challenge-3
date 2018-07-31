@@ -169,7 +169,7 @@ thead {
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: 15px 50%;
-  border-right: 1px solid lightgray;
+  border-right: 1px solid rgb(225, 227, 231);
   font-size: 16px;
   padding-left: 45px;
 }
@@ -180,6 +180,7 @@ thead {
 
 .job__subtitle {
   color: rgb(103, 114, 137);
+  font-weight: 100;
 }
 
 .job__title {
@@ -188,13 +189,17 @@ thead {
 
 .job__menu {
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   align-items: center;
 }
 
 .job__nav {
   grid-column: span 2;
-  padding: 25px 0;
+  margin-top: 35px;
+}
+
+.job__navlist {
+  padding-bottom: 25px;
 }
 
 .link__me button {
@@ -268,12 +273,16 @@ thead {
 
 .item--job {
   color: rgb(155, 165, 182);
-  margin-right: 10px;
+  font-size: 13px;
+  font-weight: 800;
+  margin: 0;
+  margin-right: 42px;
   padding-bottom: 23px;
 }
 
 .item__job--active {
-  border-bottom: 2px solid blue;
+  border-bottom: 3px solid rgb(19, 154, 249);
+  color: rgb(69, 71, 83)
 }
 
 
