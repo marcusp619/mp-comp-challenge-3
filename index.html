@@ -6,46 +6,178 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Static Comp 3</title>
     <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header class="header__nav">
-      <a href="#" class=""><i class="fas fa-bars icons"></i></a>
-      <input type="search" placeholder="Search">
-      <a href="#"><i class="fas fa-user-plus icons"></i></a>
-      <a href="#"><i class="fas fa-file-download icons"></i></a>
-      <a href="#"><i class="fas fa-folder icons"></i></a>
-    </header>
-    <aside>
-      <section class="aside__nav aside__nav--profile">
-        <img src="images/Mark Pearyer.jpg" alt="">
-        <a href="#">Mark Pearyer<i class="fas fa-caret-down"></i></a>
-      </section>
-      <ul class="aside__nav">
-        <h5 class="aside__title">Main</h5>
-        <li><i class="fas fa-home"></i>HOME</li>
-        <li><i class="fas fa-briefcase"></i>JOBS</li>
-        <li><i class="fas fa-file-alt"></i>RESUMES</li>
-        <li><i class="fas fa-tasks"></i>TASKS</li>
-        <li><i class="fas fa-calendar-alt"></i>CALENDAR</li>
-      </ul>
-      <ul class="aside__nav">
-        <h5 class="aside__title">Admin</h5>
-        <li><i class="fas fa-user-friends"></i>USERS</li>
-        <li><i class="fas fa-map"></i>LOCATIONS</li>
-        <li><i class="fas fa-bezier-curve"></i>WORKFLOWS</li>
-        <li><i class="fas fa-newspaper"></i>JOB BOARDS</li>
-        <li><i class="fab fa-connectdevelop"></i>SOCIAL</li>
-      </ul>
-      <ul class="aside__nav">
-        <h5 class="aside__title">Categories</h5>
-        <li><i class="fas fa-check-square"></i>Administrative</li>
-        <li><i class="fas fa-square"></i>Design</li>
-        <li><i class="fas fa-square"></i>Executive</li>
-        <li><i class="fas fa-square"></i>Human Resources</li>
-      </ul>
-    </aside>
+    <div class="wrapper">
+      <aside class="aside">
+        <section class="profile">
+          <img class="profile__img" src="images/Mark Pearyer.jpg" alt="">
+          <a class="profile__title" href="#">Mark Pearyer<i class="item fas fa-caret-down"></i></a>
+        </section>
+        <ul class="aside__container">
+          <h5 class="aside__title">Main</h5>
+          <li><i class="item fas fa-home"></i>HOME</li>
+          <li><i class="item fas fa-briefcase"></i>JOBS</li>
+          <li><i class="item fas fa-file-alt"></i>RESUMES</li>
+          <li><i class="item fas fa-tasks"></i>TASKS</li>
+          <li><i class="item fas fa-calendar-alt"></i>CALENDAR</li>
+        </ul>
+        <ul class="aside__container">
+          <h5 class="aside__title">Admin</h5>
+          <li><i class="item fas fa-user-friends"></i>USERS</li>
+          <li><i class="item fas fa-map"></i>LOCATIONS</li>
+          <li><i class="item fas fa-bezier-curve"></i>WORKFLOWS</li>
+          <li><i class="item fas fa-newspaper"></i>JOB BOARDS</li>
+          <li><i class="item fab fa-connectdevelop"></i>SOCIAL</li>
+        </ul>
+        <ul class="aside__container">
+          <h5 class="aside__title">Categories</h5>
+          <li><i class="item fas fa-check-square"></i>Administrative</li>
+          <li><i class="item fas fa-square"></i>Design</li>
+          <li><i class="item fas fa-square"></i>Executive</li>
+          <li><i class="item fas fa-square"></i>Human Resources</li>
+        </ul>
+      </aside>
+      <main>
+        <header class="header">
+          <a href="#" class="header__item"><i class="fas fa-bars icon"></i></a>
+          <input class="input input__header" type="search" placeholder="Search for a job, task or resume">
+          <a href="#" class="header__item"><i class="fas fa-user-plus icon"></i></a>
+          <a href="#" class="header__item"><i class="fas fa-calendar-alt icon"></i></a>
+          <a href="#" class="header__item"><i class="fas fa-th icon"></i></a>
+        </header>
+        <section class="job">
+          <div class="job__location">
+            <h2 class="job__title">Customer Service Representative</h2>
+            <p class="job__subtitle"><i class="fas fa-map-marker-alt icon__location"></i>San Francisco, CA  <sup>.</sup>   <span class="job__post">Preview this post</span></p>
+          </div>
+          <nav class="job__menu">
+            <button class="btn btn--wide menu__item" href="#"><i class="fas fa-circle"></i>OPEN</button>
+            <a class="menu__item" href="#"><i class="btn fas fa-bookmark"></i></a>
+            <a class="menu__item" href="#"><i class="btn fas fa-pencil-alt"></i></a>
+            <a class="menu__item" href="#"><i class="btn far fa-trash-alt"></i></a>
+          </nav>
+          <section class="job__nav">
+            <nav>
+              <a class="item item--job" href="#">SUMMARY</a>
+              <a class="item item--job" href="#">APPLICANTS</a>
+              <a class="item item--job" href="#">JOB BOARD</a>
+              <a class="item item--job" href="#">INTERVIEWS</a>
+              <a class="item item--job" href="#">ACTIVITY</a>
+              <a class="item item--job" href="#">BROADCAST</a>
+              <a class="item item--job" href="#">NOTIFICATIONS</a>
+            </nav>
+          </section>
+        </section>
+        <section class="data">
+          <div class="views">
+            <div class="meters">
+              <svg viewbox="0 0 36 36" class="circular-chart">
+                <path class="circle"
+                  stroke-dasharray="60, 100"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+              </svg>
+              <svg viewbox="0 0 36 36" class="circular-chart">
+                <path class="circle"
+                  stroke-dasharray="60, 100"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+              </svg>
+              <svg viewbox="0 0 36 36" class="circular-chart">
+                <path class="circle"
+                  stroke-dasharray="60, 100"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="graph">
+          </div>
+          <section class="data__btns">
+            <button class="data__btn">TOTALS <sup>.</sup> Out of 5,231 views</button>
+            <button class="data__btn">APPLICANTS/DAY</button>
+          </section>
+        </section>
+        <hr>
+        <section class="change__name">
+          <table>
+            <thead>
+              <tr>
+                <th>JOB DESCRIPTION</th>
+                <th><button>EDIT</button></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>POSITION TITLE</td>
+                <td>Customer Service Representative</td>
+              </tr>
+              <tr>
+                <td>LOCATION</td>
+                <td>San Francisco, CA</td>
+              </tr>
+              <tr>
+                <td>EMPLOYMENT TYPE</td>
+                <td>Full-time</td>
+              </tr>
+              <tr>
+                <td>Experience</td>
+                <td>Mid-level</td>
+              </tr>
+              <tr>
+                <td>STATUS</td>
+                <td>Open</td>
+              </tr>
+              <tr>
+                <td>DESCRIPTION</td>
+                <td>The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, repsonsible for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service wait times while doing a backhand spring and eating a ham sandwich.</td>
+              </tr>
+              <tr>
+                <td>HIRING LEAD</td>
+                <td>Tom Tizzy</td>
+              </tr>
+              <tr>
+                <td>APRROVED SALARY</td>
+                <td>$58,000</td>
+              </tr>
+           </tbody>
+         </table> 
+         <div class="social">
+           <button class="social__link social__link--facebook"><i class="fab fa-facebook-f icon--white"></i>Post to Facebook</button>
+           <button class="social__link social__link--twitter"><i class="fab fa-twitter icon--white"></i>Tweet this Job</button>
+           <button class="social__link social__link--linkedin"><i class="fab fa-linkedin icon--white"></i>Post to Linkedin</button>
+           <div class="link__me">
+             <h4 class="link__desc"><i class="fas fa-globe-africa"></i>Link to this Job</h4>
+             <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit. Integer mollis neque eget vestibpend.</p>
+             <input type="text">
+             <button>Copy</button>
+           </div>
+           <div class="link__me">
+             <h4 class="link__desc"><i class="far fa-newspaper"></i>Link to this Job</h4>
+             <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit. Integer mollis neque eget vestibpend.</p>
+             <input type="text">
+             <button>Copy</button>
+           </div>
+           <div class="link__me">
+             <h4 class="link__desc"><i class="fas fa-paper-plane "></i>Link to this Job</h4>
+             <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit. Integer mollis neque eget vestibpend.</p>
+             <input type="text">
+             <button>Copy</button>
+           </div>
+         </div>
+        </section>
+      </main>
+    </div>
     <script src="dist/main.js"></script>  
   </body>
 </html>
