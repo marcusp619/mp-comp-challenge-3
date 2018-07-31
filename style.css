@@ -16,7 +16,7 @@ Modifier = .block__element--modifier / .block--modifier
 }
 
 .aside {
-  background: rgb(55, 64, 80);
+  background: rgb(61, 72, 89);
   color: rgb(155, 165, 182);
   grid-column: 1;
   grid-row: 1;
@@ -94,6 +94,7 @@ Modifier = .block__element--modifier / .block--modifier
   align-items: center;
   display: grid;
   justify-items: center;
+  border-bottom: 2px solid rgba(48, 55, 71, 1);
 }
 
 table {
@@ -122,7 +123,7 @@ thead {
 .aside__title {
   color: rgb(103, 114, 137);
   font-size: 1.0rem;
-  font-weight: 100;
+  font-weight: 400;
   padding: 10px 16px;
   text-decoration: none;
 }
@@ -223,9 +224,11 @@ thead {
 }
 
 .profile__title {
-  color: rgb(155, 165, 182);
-  padding-right: 2px;
+  color: #fff;
+  font-weight: 100;
   margin-left: 10px;
+  padding-bottom: 8px;
+  padding-right: 2px;
   text-decoration: none;
 }
 
