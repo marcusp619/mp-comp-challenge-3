@@ -25,14 +25,14 @@ Modifier = .block__element--modifier / .block--modifier
 .btn {
   border: 2px solid lightgrey;
   border-radius: 50%;
-  color: rgb(103, 114, 137);
+  color: rgb(155, 163, 175);
   font-size: 14px;
   padding: 8px 10px;
 }
 
 .change__name {
   display: grid;
-  grid-template-columns: 1fr 225px;
+  grid-template-columns: 1fr 280px;
   grid-gap: 0 40px;
   padding: 40px;
 }
@@ -55,12 +55,12 @@ Modifier = .block__element--modifier / .block--modifier
   background: #fff;
   border-bottom: 1px solid lightgray;
   display: grid;
-  grid-template-columns: 55px 1fr 55px 55px 55px;
-  height: 60px;
+  grid-template-columns: 70px 1fr 70px 70px 70px;
+  height: 70px;
 }
 
 .icon {
-  color: rgb(103, 114, 137);
+  color: rgb(155, 163, 175);
 }
 
 .input {
@@ -154,15 +154,20 @@ thead {
   text-decoration: none;
 }
 
+.header__item:hover, .header__item .icon:hover {
+  background: rgb(21, 164, 250);
+  color: white;
+}
+
 .icon__location {
-  color: rgb(103, 114, 137);
+  color: rgb(155, 163, 175);;
   padding-right: 8px;
 }
 
 .input__header {
   background: url(images/search-solid.svg);
   background-repeat: no-repeat;
-  background-size: 16px;
+  background-size: 20px;
   background-position: 15px 50%;
   border-right: 1px solid lightgray;
   font-size: 16px;
@@ -251,16 +256,26 @@ thead {
   text-decoration: none;
 }
 
+.icon:hover {
+  background: blue;
+}
+
 .icon--white {
   color: #fff;
   margin: 0 25px 0 -65px;
 }
 
+
 .item--job {
   color: rgb(155, 165, 182);
-  margin: 0;
-  padding-right: 30px;
+  margin-right: 10px;
+  padding-bottom: 23px;
 }
+
+.item__job--active {
+  border-bottom: 2px solid blue;
+}
+
 
 .circular-chart {
   display: block;
