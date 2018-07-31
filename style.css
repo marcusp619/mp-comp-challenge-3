@@ -274,6 +274,23 @@ thead {
   margin: 0 25px 0 -65px;
 }
 
+.item--blue {
+  color: rgb(36, 166, 255);
+}
+
+.item--green {
+  color: rgb(0, 160, 127);
+}
+
+.item--red {
+  color: rgb(230, 24, 86);
+}
+
+.item--yellow {
+  color: rgb(255, 207, 12);
+}
+
+
 
 .item--job {
   color: rgb(155, 165, 182);
@@ -288,7 +305,6 @@ thead {
   border-bottom: 3px solid rgb(19, 154, 249);
   color: rgb(69, 71, 83)
 }
-
 
 .circular-chart {
   display: block;
