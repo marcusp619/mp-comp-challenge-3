@@ -300,6 +300,15 @@ thead {
   stroke-linecap: round;
   animation: progress 1s ease-out forwards;
 }
+
+.circle-purple {
+  stroke: rgb(164, 94, 165);
+}
+
+.circle-blue {
+  stroke: rgb(19, 154, 249);
+}
+
 .social__link--facebook {
   background: rgb(81, 112, 187);
   padding-right: 15px;
