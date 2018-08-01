@@ -23,4 +23,4 @@ Color palette, but ONLY if you select a complementary palette. We highly encoura
 * Push your final work to github pages
 Additional Requirements
 
-[Original Image](https://cdn.dribbble.com/users/44126/screenshots/1315388/attachments/184703/job-summary.png)
+![Original Image](https://cdn.dribbble.com/users/44126/screenshots/1315388/attachments/184703/job-summary.png)
