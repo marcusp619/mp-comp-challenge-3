@@ -27,7 +27,7 @@ button {
   padding: 8px 10px;
 }
 
-.change__name {
+.table__container {
   display: grid;
   grid-template-columns: 1fr 280px;
   grid-gap: 0 40px;
@@ -436,7 +436,7 @@ thead {
 
 @media screen and (max-width: 895px) {
 
-  .change__name {
+  .table__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "tables tables tables tables"
@@ -486,7 +486,7 @@ thead {
 }
 
 @media screen and (max-width: 625px) {
-  .change__name {
+  .table__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "tables tables tables tables"
@@ -513,7 +513,7 @@ thead {
     grid-template-columns: 60px 1fr 60px 60px 60px;
   }
 
-  .change__name,
+  .table__container,
   .data,
   .job,
   .social {
