@@ -7,12 +7,9 @@ Modifier = .block__element--modifier / .block--modifier
 *************/
 
 /* Block ***********************************************************/
-
-.wrapper {
-  background: rgb(237, 242, 246);
-  display: grid;
-  font-family: 'Roboto', sans-serif;
-  grid-template-columns: 225px 1fr;
+a,
+button {
+  cursor: pointer;
 }
 
 .aside {
@@ -104,46 +101,11 @@ table {
   border-spacing: 0;
 }
 
-table button {
-  background: rgb(114, 137, 179);
-  border: none;
-  border-radius: 2px;
-  color: #fff;
-  padding: 10px 16px;
-}
-
-td {
-  border-bottom: 2px solid lightgray;
-  color: rgb(155, 165, 182);
-  padding: 26px 30px;
-}
-
-td img {
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  margin: 0;
-}
-
-th {
-  color: white;
-  padding-left: 30px;
-  height: 70px;
-  text-align: left;
-  white-space: nowrap;
-}
-
-td:nth-child(1) {
-  white-space: nowrap;
-}
-
-th .fas {
-  font-size: 16px;
-  padding-right: 5px;
-}
-
-thead {
-  background: rgb(113, 125, 147); 
+.wrapper {
+  background: rgb(237, 242, 246);
+  display: grid;
+  font-family: 'Roboto', sans-serif;
+  grid-template-columns: 225px 1fr;
 }
 
 /* Elements ********************************************************/
@@ -314,6 +276,48 @@ thead {
   font-size: 12px;
   padding-top: 5px;
   padding-bottom: 10px;
+}
+
+table button {
+  background: rgb(114, 137, 179);
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  padding: 10px 16px;
+}
+
+td {
+  border-bottom: 2px solid lightgray;
+  color: rgb(155, 165, 182);
+  padding: 26px 30px;
+}
+
+td img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin: 0;
+}
+
+th {
+  color: white;
+  padding-left: 30px;
+  height: 70px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+td:nth-child(1) {
+  white-space: nowrap;
+}
+
+th .fas {
+  font-size: 16px;
+  padding-right: 5px;
+}
+
+thead {
+  background: rgb(113, 125, 147); 
 }
 
 /* Modifiers *******************************************************/
