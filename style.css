@@ -118,6 +118,13 @@ td {
   padding: 26px 30px;
 }
 
+td img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin: 0;
+}
+
 th {
   color: white;
   padding-left: 30px;
