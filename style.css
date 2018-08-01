@@ -343,6 +343,14 @@ thead {
   text-decoration: none;
 }
 
+.circle-purple {
+  stroke: rgb(164, 94, 165);
+}
+
+.circle-blue {
+  stroke: rgb(19, 154, 249);
+}
+
 .fa-facebook-f {
   padding-left: 25px;
 }
@@ -387,14 +395,6 @@ thead {
   color: rgb(69, 71, 83)
 }
 
-.circle-purple {
-  stroke: rgb(164, 94, 165);
-}
-
-.circle-blue {
-  stroke: rgb(19, 154, 249);
-}
-
 .social__link--facebook {
   background: rgb(81, 112, 187);
   padding-right: 15px;
@@ -416,12 +416,13 @@ thead {
 
 
 @media screen and (max-width: 1140px) {
+  .aside {
+    display: none;
+  }
+
   .wrapper {
     display: grid;
     grid-template-columns: 1fr;
-  }
-  .aside {
-    display: none;
   }
 }
 
@@ -434,6 +435,10 @@ thead {
 }
 
 @media screen and (max-width: 895px) {
+  .social {
+    grid-area: link;
+    padding-top: 15px;
+  }
 
   .table__container {
     display: grid;
@@ -442,19 +447,12 @@ thead {
                          ". link link .";
   }
 
-  .social {
-    grid-area: link;
-    padding-top: 15px;
-  }
-
   .table {
     grid-area: tables;
   }
-
 }
 
 @media screen and (max-width: 795px) {
-  
   .data {
     display: flex;
     flex-direction: column;
@@ -469,7 +467,6 @@ thead {
 }
 
 @media screen and (max-width: 695px ) {
-  
   .job {
     display: grid;
     grid-template-columns: 1fr;
@@ -487,7 +484,6 @@ thead {
 }
 
 @media screen and (max-width: 625px) {
-  
   .item--job {
     padding-bottom: 0;
   }
@@ -510,11 +506,10 @@ thead {
 }
 
 @media screen and (max-width: 470px) {
-
   .data__btns {
     flex-direction: column;
   }
-  
+
   .header {
     grid-template-columns: 60px 1fr 60px 60px 60px;
   }
@@ -534,6 +529,4 @@ thead {
     align-items: center;
     flex-direction: column;
   }
-
-
 }
