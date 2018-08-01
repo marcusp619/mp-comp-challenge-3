@@ -7,12 +7,9 @@ Modifier = .block__element--modifier / .block--modifier
 *************/
 
 /* Block ***********************************************************/
-
-.wrapper {
-  background: rgb(237, 242, 246);
-  display: grid;
-  font-family: 'Roboto', sans-serif;
-  grid-template-columns: 225px 1fr;
+a,
+button {
+  cursor: pointer;
 }
 
 .aside {
@@ -30,7 +27,7 @@ Modifier = .block__element--modifier / .block--modifier
   padding: 8px 10px;
 }
 
-.change__name {
+.table__container {
   display: grid;
   grid-template-columns: 1fr 280px;
   grid-gap: 0 40px;
@@ -104,39 +101,11 @@ table {
   border-spacing: 0;
 }
 
-table button {
-  background: rgb(114, 137, 179);
-  border: none;
-  border-radius: 2px;
-  color: #fff;
-  padding: 10px 16px;
-}
-
-td {
-  border-bottom: 2px solid lightgray;
-  color: rgb(155, 165, 182);
-  padding: 26px 30px;
-}
-
-th {
-  color: white;
-  padding-left: 30px;
-  height: 70px;
-  text-align: left;
-  white-space: nowrap;
-}
-
-td:nth-child(1) {
-  white-space: nowrap;
-}
-
-th .fas {
-  font-size: 16px;
-  padding-right: 5px;
-}
-
-thead {
-  background: rgb(113, 125, 147); 
+.wrapper {
+  background: rgb(237, 242, 246);
+  display: grid;
+  font-family: 'Roboto', sans-serif;
+  grid-template-columns: 225px 1fr;
 }
 
 /* Elements ********************************************************/
@@ -309,6 +278,48 @@ thead {
   padding-bottom: 10px;
 }
 
+table button {
+  background: rgb(114, 137, 179);
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  padding: 10px 16px;
+}
+
+td {
+  border-bottom: 2px solid lightgray;
+  color: rgb(155, 165, 182);
+  padding: 26px 30px;
+}
+
+td img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin: 0;
+}
+
+th {
+  color: white;
+  padding-left: 30px;
+  height: 70px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+td:nth-child(1) {
+  white-space: nowrap;
+}
+
+th .fas {
+  font-size: 16px;
+  padding-right: 5px;
+}
+
+thead {
+  background: rgb(113, 125, 147); 
+}
+
 /* Modifiers *******************************************************/
 .btn--wide {
   background: none;
@@ -425,7 +436,7 @@ thead {
 
 @media screen and (max-width: 895px) {
 
-  .change__name {
+  .table__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "tables tables tables tables"
@@ -475,7 +486,7 @@ thead {
 }
 
 @media screen and (max-width: 625px) {
-  .change__name {
+  .table__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "tables tables tables tables"
@@ -502,7 +513,7 @@ thead {
     grid-template-columns: 60px 1fr 60px 60px 60px;
   }
 
-  .change__name,
+  .table__container,
   .data,
   .job,
   .social {
