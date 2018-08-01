@@ -26,12 +26,19 @@ button {
   font-size: 14px;
   padding: 8px 10px;
 }
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
 
-.table__container {
-  display: grid;
-  grid-template-columns: 1fr 280px;
-  grid-gap: 0 40px;
-  padding: 40px;
+.circle {
+  animation: progress 1s ease-out forwards;
+  stroke: #4CC790;
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
 }
 
 .data {
@@ -43,8 +50,8 @@ button {
 
 .graph {
   background: url(images/graph.png);
-  background-repeat: no-repeat;
   background-position-x: 60%;
+  background-repeat: no-repeat;
   background-size: contain;
 }
 
@@ -68,8 +75,8 @@ button {
 }
 
 .item {
-  text-decoration: none;
   margin: 15px 15px;
+  text-decoration: none;
 }
 
 .job {
@@ -89,9 +96,9 @@ button {
 
 .profile {
   align-items: center;
+  border-bottom: 2px solid rgba(48, 55, 71, 1);
   display: grid;
   justify-items: center;
-  border-bottom: 2px solid rgba(48, 55, 71, 1);
 }
 
 table {
@@ -124,8 +131,8 @@ table {
 }
 
 .data__btns {
-  grid-column: span 2;
   display: flex;
+  grid-column: span 2;
   justify-content: space-around;
 }
 
@@ -185,9 +192,9 @@ table {
 }
 
 .job__menu {
+  align-items: center;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
 }
 
 .job__nav {
@@ -286,6 +293,13 @@ table button {
   padding: 10px 16px;
 }
 
+.table__container {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  grid-gap: 0 40px;
+  padding: 40px;
+}
+
 td {
   border-bottom: 2px solid lightgray;
   color: rgb(155, 165, 182);
@@ -295,8 +309,8 @@ td {
 td img {
   border-radius: 50%;
   height: 50px;
-  width: 50px;
   margin: 0;
+  width: 50px;
 }
 
 th {
@@ -327,6 +341,14 @@ thead {
   font-weight: 800;
   padding: 8px 20px;
   text-decoration: none;
+}
+
+.circle-purple {
+  stroke: rgb(164, 94, 165);
+}
+
+.circle-blue {
+  stroke: rgb(19, 154, 249);
 }
 
 .fa-facebook-f {
@@ -373,29 +395,6 @@ thead {
   color: rgb(69, 71, 83)
 }
 
-.circular-chart {
-  display: block;
-  margin: 10px auto;
-  max-width: 80%;
-  max-height: 250px;
-}
-
-.circle {
-  stroke: #4CC790;
-  fill: none;
-  stroke-width: 2.8;
-  stroke-linecap: round;
-  animation: progress 1s ease-out forwards;
-}
-
-.circle-purple {
-  stroke: rgb(164, 94, 165);
-}
-
-.circle-blue {
-  stroke: rgb(19, 154, 249);
-}
-
 .social__link--facebook {
   background: rgb(81, 112, 187);
   padding-right: 15px;
@@ -417,12 +416,13 @@ thead {
 
 
 @media screen and (max-width: 1140px) {
+  .aside {
+    display: none;
+  }
+
   .wrapper {
     display: grid;
     grid-template-columns: 1fr;
-  }
-  .aside {
-    display: none;
   }
 }
 
@@ -435,6 +435,10 @@ thead {
 }
 
 @media screen and (max-width: 895px) {
+  .social {
+    grid-area: link;
+    padding-top: 15px;
+  }
 
   .table__container {
     display: grid;
@@ -443,15 +447,9 @@ thead {
                          ". link link .";
   }
 
-  .social {
-    grid-area: link;
-    padding-top: 15px;
-  }
-
   .table {
     grid-area: tables;
   }
-
 }
 
 @media screen and (max-width: 795px) {
@@ -486,17 +484,6 @@ thead {
 }
 
 @media screen and (max-width: 625px) {
-  .table__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "tables tables tables tables"
-                         "link link link link";
-  }
-
-  .job__navlist {
-    flex-wrap: wrap;
-  }
-
   .item--job {
     padding-bottom: 0;
   }
@@ -505,9 +492,23 @@ thead {
     border: 3px solid rgb(19, 154, 249);
     color: rgb(69, 71, 83)
   }
+  
+  .job__navlist {
+    flex-wrap: wrap;
+  }
+
+  .table__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "tables tables tables tables"
+                          "link link link link";
+  }
 }
 
 @media screen and (max-width: 470px) {
+  .data__btns {
+    flex-direction: column;
+  }
 
   .header {
     grid-template-columns: 60px 1fr 60px 60px 60px;
@@ -519,17 +520,13 @@ thead {
   .social {
     padding: 0;
   }
+  
+  .item--job {
+    margin-bottom: 10px;
+  }
 
   .job__navlist {
     align-items: center;
     flex-direction: column;
-  }
-
-  .data__btns {
-    flex-direction: column;
-  }
-
-  .item--job {
-    margin-bottom: 10px;
   }
 }
