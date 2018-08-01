@@ -98,19 +98,46 @@ Modifier = .block__element--modifier / .block--modifier
 }
 
 table {
+  background: #fff;
   border: 0;
+  border-radius: 10px;
   border-spacing: 0;
-  padding: 0 20px;
+}
+
+table button {
+  background: rgb(114, 137, 179);
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  padding: 10px 16px;
 }
 
 td {
   border-bottom: 2px solid lightgray;
-  padding: 20px 0;
+  padding: 20px 30px;
+  color: rgb(155, 165, 182);
+  
+}
+
+th {
+  color: white;
+  padding-left: 30px;
+  height: 70px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+td:nth-child(1) {
+  white-space: nowrap;
+}
+
+th .fas {
+  font-size: 16px;
+  padding-right: 5px;
 }
 
 thead {
-  background: rgb(113, 125, 147);
-  
+  background: rgb(113, 125, 147); 
 }
 
 /* Elements ********************************************************/
@@ -265,13 +292,18 @@ thead {
   text-decoration: none;
 }
 
+.fa-facebook-f {
+  padding-left: 25px;
+}
+
 .icon:hover {
   background: blue;
 }
 
 .icon--white {
   color: #fff;
-  margin: 0 25px 0 -65px;
+  font-size: 2em;
+  margin: 0px 50px 0 -65px;
 }
 
 .item--blue {
