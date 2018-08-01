@@ -454,6 +454,7 @@ thead {
 }
 
 @media screen and (max-width: 795px) {
+  
   .data {
     display: flex;
     flex-direction: column;
@@ -468,6 +469,7 @@ thead {
 }
 
 @media screen and (max-width: 695px ) {
+  
   .job {
     display: grid;
     grid-template-columns: 1fr;
@@ -498,7 +500,7 @@ thead {
   .job__navlist {
     flex-wrap: wrap;
   }
-  
+
   .table__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -509,6 +511,10 @@ thead {
 
 @media screen and (max-width: 470px) {
 
+  .data__btns {
+    flex-direction: column;
+  }
+  
   .header {
     grid-template-columns: 60px 1fr 60px 60px 60px;
   }
@@ -519,17 +525,15 @@ thead {
   .social {
     padding: 0;
   }
+  
+  .item--job {
+    margin-bottom: 10px;
+  }
 
   .job__navlist {
     align-items: center;
     flex-direction: column;
   }
 
-  .data__btns {
-    flex-direction: column;
-  }
 
-  .item--job {
-    margin-bottom: 10px;
-  }
 }
