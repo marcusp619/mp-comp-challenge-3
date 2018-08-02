@@ -12,6 +12,11 @@ button {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+  color: rgb(155, 163, 175);
+}
+
 .aside {
   background: rgb(61, 72, 89);
   color: rgb(155, 165, 182);
@@ -232,7 +237,6 @@ table {
   border: none;
 }
 
-
 .link__me button {
   background: rgb(62, 177, 185);
   border: none;
@@ -279,6 +283,10 @@ table {
   width: 80%;
 }
 
+.social input:last-child {
+  width: 95%;
+}
+
 .social p {
   font-size: 12px;
   padding-top: 5px;
@@ -308,9 +316,15 @@ td {
 
 td img {
   border-radius: 50%;
-  height: 50px;
+  
   margin: 0;
+  padding-right: 5px;
   width: 50px;
+}
+
+.td-img-fix {
+  display: flex;
+  align-items: center;
 }
 
 th {
@@ -514,7 +528,6 @@ thead {
     grid-template-columns: 60px 1fr 60px 60px 60px;
   }
 
-  .table__container,
   .data,
   .job,
   .social {
@@ -527,6 +540,11 @@ thead {
 
   .job__navlist {
     align-items: center;
-    flex-direction: column;
+    /* flex-direction: column; */
+  }
+
+  td {
+    padding: 10px 30px;
+    font-size: 12px;
   }
 }
