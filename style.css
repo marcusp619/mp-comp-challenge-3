@@ -57,7 +57,13 @@ a {
   background: url(images/graph.png);
   background-position-x: 60%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 400px;
+  display: grid;
+  align-items: end;
+}
+
+.graph button {
+  margin-top: 40px;
 }
 
 .header {
@@ -434,6 +440,11 @@ thead {
     display: none;
   }
 
+  .graph {
+    background-position-x: 50%;
+    background-size: 500px;
+  }
+
   .wrapper {
     display: grid;
     grid-template-columns: 1fr;
@@ -474,6 +485,7 @@ thead {
   .graph {
     height: 300px;
     width: 100%;
+    background-position-x: 70%;
   }
   .item--job {
     margin-right: 20px;
@@ -519,19 +531,34 @@ thead {
   }
 }
 
-@media screen and (max-width: 470px) {
-  .data__btns {
-    flex-direction: column;
+@media screen and (max-width: 570px) {
+  .graph {
+    background-size: contain;
   }
+}
 
+@media screen and (max-width: 470px) {
   .header {
     grid-template-columns: 60px 1fr 60px 60px 60px;
+  }
+
+  .header__item:nth-of-type(3),
+  .header__item:nth-of-type(2) {
+    display: none;
+  }
+
+  .header__item:nth-of-type(4) {
+    grid-column: 5;
   }
 
   .data,
   .job,
   .social {
     padding: 0;
+  }
+
+  .input__header {
+    grid-column: 2/ 5;
   }
   
   .item--job {
@@ -540,11 +567,36 @@ thead {
 
   .job__navlist {
     align-items: center;
-    /* flex-direction: column; */
+  }
+
+  .social input {
+    width: 70%;
+  }
+
+  .table {
+    display: block;
+    font-size: 10px;
+    margin-bottom: 15px;
+  }
+
+  thead {
+    display: block;
   }
 
   td {
-    padding: 10px 30px;
+    padding: 10px 10px;
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .graph {
+    align-items: initial;
+    margin-bottom: -70px;
+  }
+
+  .graph button {
+    margin-top: 110px;
+    align-self: center;
   }
 }
